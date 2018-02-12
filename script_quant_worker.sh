@@ -14,7 +14,6 @@ echo Directory is `pwd`
 echo Running shell from $SHELL
 echo "##################################################################"
 
-
 echo $0 $1 $2 $3 $4;echo;echo
 line=$1
 indir=$2
@@ -24,22 +23,11 @@ echo $line;echo
 echo $indir;echo
 echo $outdir;echo
 echo $tissue;echo
+
 PATH=$PATH:/media/shared_data/software/QTLtools_1.0
-
 GTFFILE=/media/shared_data/data/gencode.v19.annotation.gtf
-
-THREAD_NO=4
-#line=21
-
-#indir=/media/shared_data/data/adipose_out/$line/reference
-#indir=/media/shared_data/data/skin_out/$line/reference
-#indir=/media/shared_data/data/LCL_out/$line/reference
-#indir=/media/shared_data/data/blood_out/$line/reference
-#outdir=/media/shared_data/alex/proj/exonquant/results/adipose/qc3
-#outdir=/media/shared_data/alex/proj/exonquant/results/skin
-#outdir=/media/shared_data/alex/proj/exonquant/results/lcl
-#outdir=/media/shared_data/alex/proj/exonquant/results/blood
 mytemp=/tmp/alex/$tissue
+THREAD_NO=4
 
 #Create temporary directories
 mkdir -p $mytemp/$line/reference
