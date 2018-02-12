@@ -24,13 +24,6 @@ PATH=$PATH:/media/shared_data/software/QTLtools_1.0
 INVCFFILE=/media/shared_data/alex/data/genotypes/matrixqtl/Brent.Final.GW.ref.chr.final.vcf.gz
 THREAD_NO=4
 VCFFILE=$line"/reference/"$(basename $INVCFFILE)
-
-#indir=/media/shared_data/data/skin_out/$line/reference
-#indir=/media/shared_data/data/adipose_out/$line/reference
-#indir=/media/shared_data/data/LCL_out/$line/reference
-#outdir=/media/shared_data/alex/proj/exonquant/results/adipose
-#outdir=/media/shared_data/alex/proj/exonquant/results/skin
-#outdir=/media/shared_data/alex/proj/exonquant/results/lcl
 outdir=/media/shared_data/alex/proj/exonquant/results/blood
 indir=/media/shared_data/data/blood_out/$line/reference
 mytemp=/tmp/alex
